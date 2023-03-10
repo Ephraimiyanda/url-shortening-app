@@ -1,22 +1,24 @@
-const OptionBtn= document.querySelector(".hamburger");
-const dropdownLinks = document.querySelector(".headingLinks");
-const myBtns = document.querySelector(".myBtns");
-const ShortenBtn = document.querySelector(".enterBtn");
-const input = document.querySelector("innput");
-const working =  document.querySelector(".working");
+const input = $('#shortenURL');
+const submitBtn = $('#shorten');
+const error = $('#emptyMsg');
 
 let empty = true;
 
 
-function showLinks(){
-    dropdownLinks.classList.toggle("block");
-    myBtns.classList.toggle("remove");
-    working.classList.toggle("blank");
-    myBtns.style.marginBottom="-240px";
-}
-OptionBtn.addEventListener("click",showLinks)
 
-//check for link
+let mobileMenuStatut = false;
+$('#hamburger').click(function () {
+    if (mobileMenuStatut) {
+        $('.mobileMenue').css("opacity", 0);
+        mobileMenuStatut = false;
+    } else {
+        $('.mobileMenue').css("opacity", 1);
+        mobileMenuStatut = true;
+    }
+
+});
+
+// Check for url typing
 function validURL(str) {
     var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
         '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
@@ -26,6 +28,7 @@ function validURL(str) {
         '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
     return !!pattern.test(str);
 }
+
 // POST method implementation:
 async function postData(url = '', data = {}) {
 
@@ -43,6 +46,7 @@ async function postData(url = '', data = {}) {
     });
     return response.json();
 }
+
 // Shorten URL
 function fetchURL() {
     const urlin = ""+input.val();
@@ -57,7 +61,7 @@ function fetchURL() {
             })
             .then(data => {
                 const shortURL = "https://rel.ink/" + data.hashid;
-                $('.middleSection').prepend('<div class="short-section" id="section"><p class="original-url">' + urlin + '</p><p class="short-section-url">' + shortURL + '</p><button id="btnCopy" class="active square" >copy</button></div>');
+                $('.bottom').prepend('<div class="short-section" id="section"><p class="original-url">' + urlin + '</p><p class="short-section-url">' + shortURL + '</p><button id="btnCopy" class="active square" >copy</button></div>');
                 $("#btnCopy").on("click", function () {
                     navigator.clipboard.writeText(shortURL); //Copy text to clipboard using chrome API
                     $("#btnCopy").addClass("copy");
@@ -88,4 +92,4 @@ function callError() {
     }
 }
 
-ShortenBtn.addEventListener("click", fetchURL);
+submitBtn.on("click", fetchURL);
