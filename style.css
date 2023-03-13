@@ -265,17 +265,16 @@ h6{
  .lineThrough{
     display: none;
  }
-@media only screen and (max-device-width:500px) and (min-device-width:280px){
+@media only screen and (max-device-width:600px) and (min-device-width:300px){
 
 .headingLinks{
     height: max-content;
-    line-height: 30px;
+    line-height: 60px;
     padding-top: 20px;
     padding-bottom: 30px;
     display:none;
     margin-left: 0px;
     margin-right: 0px;
-    flex-direction: column;
     background-color:rgb(48, 53, 70) ;
     float:none;
     text-align: center;
@@ -293,11 +292,9 @@ a:hover{
     justify-content: center;
     float: none;
     padding-bottom: 40px;
-    margin-top: -25px;
-    text-align: center;
     display: none;
     padding-right: 90px;
-
+margin-top: -28px;
 }
 .signupBtn{
     width: 200px;
@@ -321,6 +318,9 @@ margin-left: 110px;
 }
 .block{
     display: block; 
+}
+.h1marging{
+margin-top: 0px;
 }
 .starter{
     text-align: center;
@@ -349,6 +349,7 @@ h1{
 }
 .shortner{
     width: 300px;
+ 
 }
 input{
     width:280px
@@ -366,7 +367,13 @@ input{
     margin-top: 30px;
 }
 .logo{
-margin-left: 160px;
+margin-left: 85px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .footerDiv{
     margin-left: -50px;

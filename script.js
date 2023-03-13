@@ -2,90 +2,49 @@ const OptionBtn= document.querySelector(".hamburger");
 const dropdownLinks = document.querySelector(".headingLinks");
 const myBtns = document.querySelector(".myBtns");
 const ShortenBtn = document.querySelector(".enterBtn");
-const input = document.querySelector("innput");
+const input = document.querySelector("input");
 const working =  document.querySelector(".working");
-
-let empty = true;
+const h1 =document.querySelector("h1");
+const middleSection =document.querySelector(".middleSection");
 
 
 function showLinks(){
     dropdownLinks.classList.toggle("block");
     myBtns.classList.toggle("remove");
     working.classList.toggle("blank");
-    myBtns.style.marginBottom="-240px";
+ h1.classList.toggle("h1marging")
 }
 OptionBtn.addEventListener("click",showLinks)
 
+
+function link(){
+     return input.textContent;
+    }
+const url = input.textContent
 //check for link
-function validURL(str) {
-    var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-        '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
-    return !!pattern.test(str);
-}
-// POST method implementation:
-async function postData(url = '', data = {}) {
-
-    const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        body: JSON.stringify(data)
-    });
-    return response.json();
-}
-// Shorten URL
-function fetchURL() {
-    const urlin = ""+input.val();
-    if (urlin === "") {
-        if (empty) {
-            callError();
+async function urlShortening(url){
+    try{
+        const response = await fetch(`https//api.shrtcoi.de/v2/shorten?url=${url}`);
+        const data = await response.json();
+        const newLink  = document.createElement("div");
+        newLink.innerHTML= `
+        <div><p class="link">${data.result.ShortenBtn_link}</p><button class="copy"></button>
+        </div>
+        `
+        middleSection.appendChild(newLink);
+        if(!response.ok){
+            throw new error(`HTTP error:${response.status}`);
         }
+    }
+        catch(error){
+            console.error(`cannot find link data ${error}`)
+        }
+    }
 
-    } else if (validURL(urlin)) {
-        postData('https://rel.ink/api/links/', {
-                url: urlin
-            })
-            .then(data => {
-                const shortURL = "https://rel.ink/" + data.hashid;
-                $('.middleSection').prepend('<div class="short-section" id="section"><p class="original-url">' + urlin + '</p><p class="short-section-url">' + shortURL + '</p><button id="btnCopy" class="active square" >copy</button></div>');
-                $("#btnCopy").on("click", function () {
-                    navigator.clipboard.writeText(shortURL); //Copy text to clipboard using chrome API
-                    $("#btnCopy").addClass("copy");
-                    $("#btnCopy").removeClass("active");
-                    $("#btnCopy").text("Copied!");
-                });
-            });
-        input.removeClass("empty");
-        $("#emptyMsg").remove();
-        empty = true;
-
-
-    } else {
-        callError();
+function shortenFunction(){
+    if(link() > 0){
+        urlShortening();
     }
 }
 
-function copyToClipboard() {
-    copyURL.addClass("copied");
-}
-
-// Empty text Error
-function callError() {
-    if (empty) {
-        input.addClass("empty");
-        input.after('<p id="emptyMsg">Please add a link</p>');
-        empty = false;
-    }
-}
-
-ShortenBtn.addEventListener("click", fetchURL);
+ShortenBtn.addEventListener("click", shortenFunction)
