@@ -38,7 +38,7 @@ float: right;
  }
 .signupBtn:hover,.getStarted:hover,.enterBtn:hover{
     background-color: rgb(106, 246, 243);
-   
+   cursor: pointer;
 }
 .hamburger{
     display: none;
@@ -72,6 +72,7 @@ p{
     font-size: medium;
 }
 .starter{
+  
 padding-left: 30px;
 margin-top: 30px;
 justify-content: center;
@@ -80,9 +81,9 @@ margin-bottom: 80px;
 width: 390px;
 
   }
- .workingDiv{
+ .workingDiv{ 
+    flex-wrap: wrap-reverse;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
  }
  .working{
@@ -114,15 +115,14 @@ width: 390px;
     padding-top: 10px;
     text-align: center;
     justify-content: center;
-    width: fit-content;
+    width: 70%;
    margin-bottom: -40px;
    border-radius: 5px;
 
 }
 input{
-
+width:60%;
     height: 30px;
-    width: 450px;
     border: 0px;
     border-radius: 6px;
     margin-right: 18px;
@@ -138,8 +138,11 @@ input{
     margin-top: 15px;
 }
 .middleSection{
+  
+    padding-right: 50px;
+    padding-left: 50px;
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
     height: max-content;
     background-color: rgb(217, 221, 222);
 }
@@ -149,11 +152,44 @@ text-align: center;
 margin-bottom: 80px;
 }
 
+.linkDiv{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+   margin-left: 110px;
+    margin-bottom: 60px;
+    margin-top: -40px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.shortenedLink{
+    text-align: left;
+    width: 10%;
+    margin-left: 480px;
+    color: hsl(173, 67%, 73%);
+    padding-right: 60px;
+}
+.copy{
+    color: white;
+    background-color:hsl(173, 67%, 73%);
+    border-width: 0px;
+    border-radius: 4px;
+    margin-top: 8px;
+    height: 35px;
+    width:10%;
+}
+.copied{
+    background-color: rgb(88, 88, 241);
+}
 .statistics{
+
 display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 40px;
+flex-wrap:wrap;
+justify-content:space-around;
+gap: 0px;
 }
 
 h3,h4,h5{
@@ -198,20 +234,20 @@ h5{
 text-align: left;
 background-color: white;
 height:200px;
-width: 223px;
+width: 330px;
 padding-left: 10px;
 padding-right: 10px;
 font-size: smaller;
-margin-right: 10px;
+
 border-radius: 5px;
 box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
 
 }
 .block2{
-    margin-top: 40px;
+   transform: translateY(2rem);
 }
 .block3{
-    margin-top: 70px;
+    transform: translateY(4rem);
 }
 .boostLinks{
     padding: 20px;
@@ -224,34 +260,35 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
     background-size: cover;
 }
 .logo{
-    
-    margin-right: -230px;
+    height: 50px;
+    width: 120px;
+  padding-left: 20px;
+  margin-right: 0px;
 }
 footer{
     padding-top: 20px;
     background-color: black;
-    padding-left: 30px;
     padding-bottom: 20px;
+    justify-content: center;
+    padding-left: 100px;
 }
 .footerDiv{
-   
-margin-left:    150px;
- text-align: justify;
-display:grid;
-grid-gap:20px;
-grid-template-columns:repeat(auto-fill,minmax(210px,1fr) ) 
+  
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(210px,1fr) ) ;
+align-items: center;
+justify-content: center;
 }
-.socialmedia{
-    margin:0px;
-}
+
 img{
-    margin-right: 10px;
+    margin-right: 0px;
 }
 ul{
 list-style-type: none;
 }
 .footHeader{
     color: white;
+    margin: 0px;
 }
 .link:hover{
     color:hsl(159, 82%, 65%);
@@ -265,7 +302,10 @@ h6{
  .lineThrough{
     display: none;
  }
-@media only screen and (max-device-width:600px) and (min-device-width:300px){
+ .layout{
+    margin: 0px;
+ }
+@media screen and (max-width:800px){
 
 .headingLinks{
     height: max-content;
@@ -309,6 +349,10 @@ margin-left: 110px;
 .loginBtn:hover{
     color:hsl(173, 67%, 73%) ;
 }
+.workingDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .remove{
     display:grid ;
@@ -327,9 +371,10 @@ margin-top: 0px;
     margin-left: -19px;
 }
 h1{
-   margin-top: 300px;
+   margin-top: 360px;
 }
 .working{
+   
     margin-left: 40px;
     width: 380px;
     margin-top: -650px;
@@ -343,6 +388,7 @@ h1{
     display: block;
     padding-top: 7px;
     background-color: black;
+    float: right;
 }
 .getStarted{
     width: 200px;
@@ -361,13 +407,17 @@ input{
     text-align: center;
 }
 .img1,.img2,.img3{
-    margin-left: 80px;
+ margin-left: 100px;
+}
+.block2{
+    margin-top: 30px;
 }
 .block3{
     margin-top: 30px;
 }
 .logo{
-margin-left: 85px;
+margin-left:  0px;
+width: 120px;
 }
 
 footer{
@@ -376,7 +426,9 @@ footer{
     justify-content: center;
 }
 .footerDiv{
-    margin-left: -50px;
+   display: flex;
+   flex-direction: column;
+    margin-left: -100px;
     text-align: center;
 }
 .footHeader{
@@ -386,5 +438,82 @@ footer{
 .socialMedia{
 margin-left: 40px;
 }
+.lineThrough{
+    width: 6px;
+    height: 300px;
+    background-color: cyan;
+}
+.linkDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    padding-bottom: 20px;
+   margin-left: 0px;
+}
 
+.originalLink{
+    border-bottom: 1px solid rgb(212, 210, 210);
+    border-spacing: 20px;
+    width: 100%;
+   padding-left: 17px;
+}
+.shortenedLink{
+    padding-left: 17px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -0px;
+    margin-bottom: 0px;
+}
+.copy{
+    
+    width:90%;
+    
+}
+.copied{
+    background-color: rgb(88, 88, 241);
+}
+}
+@media (max-width:1200px) {
+
+    .linkDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+        height: fit-content;
+        padding-bottom: 20px;
+       margin-left: 0px;
+    }
+    
+    .originalLink{
+        border-bottom: 1px solid rgb(212, 210, 210);
+        border-spacing: 20px;
+        width: 100%;
+       padding-left: 17px;
+    }
+    .shortenedLink{
+        padding-left: 17px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: -0px;
+        margin-bottom: 0px;
+    }
+    .copy{
+        width:90%;
+    }
+    .hamburger{
+        position: relative;
+        margin-left: 320px;
+        margin-top: -40px;
+        width: 35px;
+        height: 20px;
+        display: block;
+        padding-top: 7px;
+        background-color: black;
+        float: right;
+    }
 }
