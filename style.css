@@ -395,6 +395,7 @@ h1{
     padding-top: 7px;
     background-color: black;
     float: right;
+margin-bottom:0px;
 }
 .getStarted{
     width: 200px;
@@ -526,11 +527,11 @@ margin-left: 40px;
 }
 @media (max-width:339px){
     .working{
-        margin: 0px;
-        margin-top: -970px;
+        
+        margin-top: -1200px;
     }
     .hamburger{
-        margin: 0px;
+        
         margin-bottom: 0px;
     }
     .logo1{
