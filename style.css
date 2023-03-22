@@ -381,6 +381,7 @@ h1{
     position: relative;
     width: 350px;
     margin-top: -650px;
+    margin-bottom: 0px;
 }
 .hamburger{
     position: relative;
