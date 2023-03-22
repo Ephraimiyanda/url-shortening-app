@@ -376,12 +376,12 @@ margin-top: 0px;
 }
 h1{
     margin: 0px;
-   margin-top: 360px;
+   margin-top: 410px;
 }
 .working{
 margin: 0px;
     width: 350px;
-    margin-top: -650px;
+    margin-top: -750px;
 }
 .hamburger{
     margin: 0px;
@@ -523,7 +523,7 @@ margin-left: 40px;
 @media (max-width:339px){
     .working{
         margin: 0px;
-        margin-top: -700px;
+        margin-top: -750px;
     }
     .hamburger{
         margin: 0px;
