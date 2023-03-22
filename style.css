@@ -360,7 +360,7 @@ margin-left: 110px;
 .working{
     margin: 0px;
         width: 350px;
-        margin-top: -790px;
+       
     }
 .remove{
     display:grid ;
@@ -381,7 +381,7 @@ margin-top: 0px;
 }
 h1{
     margin: 0px;
-   margin-top: 410px;
+   margin-top: 390px;
 }
 
 .hamburger{
@@ -424,6 +424,9 @@ input{
 .logo{
 margin-left:  0px;
 width: 120px;
+}
+.logo1{
+    margin-bottom: 100px;
 }
 
 footer{
