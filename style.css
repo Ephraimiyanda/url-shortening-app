@@ -459,7 +459,7 @@ margin-left: 40px;
 .originalLink{
     border-bottom: 1px solid rgb(212, 210, 210);
     border-spacing: 20px;
-    width: 100%;
+    width: 60%;
    padding-left: 17px;
 }
 .shortenedLink{
@@ -515,5 +515,10 @@ margin-left: 40px;
         padding-top: 7px;
         background-color: black;
         float: right;
+    }
+}
+@media (max-width:339px){
+    .working{
+        margin-top: -700px;
     }
 }
