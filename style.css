@@ -1,4 +1,4 @@
-body{
+.body{
     background-repeat: no-repeat;
     background-size: 340px;
    padding-left: 130px;
@@ -381,14 +381,14 @@ margin-top: 0px;
 }
 h1{
     margin: 0px;
-   margin-top: 340px;
+   margin-top: 390px;
 }
 
 .hamburger{
     margin: 0px;
     position: relative;
     margin-left: 320px;
-    
+    margin-top: -40px;
     width: 35px;
     height: 20px;
     display: block;
@@ -425,7 +425,9 @@ input{
 margin-left:  0px;
 width: 120px;
 }
-
+.logo1{
+    margin-bottom: 100px;
+}
 
 footer{
     display: flex;
@@ -474,7 +476,6 @@ margin-left: 40px;
     margin-left: -0px;
     margin-bottom: 0px;
 }
-
 .copy{
     
     width:90%;
