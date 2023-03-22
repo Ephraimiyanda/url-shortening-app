@@ -1,4 +1,4 @@
-.body{
+body{
     background-repeat: no-repeat;
     background-size: 340px;
    padding-left: 130px;
@@ -425,9 +425,7 @@ input{
 margin-left:  0px;
 width: 120px;
 }
-.logo1{
-    margin-bottom: 100px;
-}
+
 
 footer{
     display: flex;
