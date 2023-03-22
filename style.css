@@ -381,14 +381,14 @@ margin-top: 0px;
 }
 h1{
     margin: 0px;
-   margin-top: 390px;
+   margin-top: 300px;
 }
 
 .hamburger{
     margin: 0px;
     position: relative;
     margin-left: 320px;
-    margin-top: -140px;
+    
     width: 35px;
     height: 20px;
     display: block;
@@ -473,6 +473,9 @@ margin-left: 40px;
     margin-top: 0px;
     margin-left: -0px;
     margin-bottom: 0px;
+}
+.logo1{
+margin-bottom:0px;
 }
 .copy{
     
