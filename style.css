@@ -360,7 +360,7 @@ margin-left: 110px;
 .working{
     margin: 0px;
         width: 350px;
-       margin-top:-750px;
+       margin-top:-850px;
     }
 .remove{
     display:grid ;
@@ -536,7 +536,5 @@ margin-left: 40px;
     .logo1{
         margin-bottom: 50px;
     }
-.logo1{
-margin-bottom:0px;
-}
+
 }
