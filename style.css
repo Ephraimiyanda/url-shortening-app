@@ -87,6 +87,7 @@ width: 390px;
     justify-content: center;
  }
  .working{
+   
     margin-bottom: 50px;
  }
   .getStarted{
@@ -319,7 +320,7 @@ h6{
     float:none;
     text-align: center;
     color: white;
-  
+
   
 }
 a:hover{
@@ -335,6 +336,7 @@ a:hover{
     display: none;
     padding-right: 90px;
 margin-top: -28px;
+
 }
 .signupBtn{
     width: 200px;
@@ -356,6 +358,7 @@ margin-left: 110px;
 
 .remove{
     display:grid ;
+    
 }
 .blank{
     display: none;
@@ -374,9 +377,8 @@ h1{
    margin-top: 360px;
 }
 .working{
-   
-    margin-left: 40px;
-    width: 380px;
+
+    width: 350px;
     margin-top: -650px;
 }
 .hamburger{
@@ -472,9 +474,7 @@ margin-left: 40px;
     width:90%;
     
 }
-.copied{
-    background-color: rgb(88, 88, 241);
-}
+
 }
 @media (max-width:1200px) {
 

@@ -36,14 +36,14 @@ async function shorten(url){
             middleSection.prepend(newLink)
             const copyBtn = document.querySelector(".copy");
             input.value="";
-
+            localStorage["jsonData"] = JSON.stringify(data);
 
             copyBtn.addEventListener("click", ()=>{
-                copyBtn.classList.toggle("copied");
+                copyBtn.style.backgroundColor="blue";
                 copyBtn.innerHTML=`copied!`
                 navigator.clipboard.writeText(data.result.short_link);
             });
-
+            
 
         }
             catch(error){
