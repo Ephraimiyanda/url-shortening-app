@@ -1,4 +1,4 @@
-.body{
+I.body{
     background-repeat: no-repeat;
     background-size: 340px;
    padding-left: 130px;
@@ -360,7 +360,7 @@ margin-left: 110px;
 .working{
     margin: 0px;
         width: 350px;
-       
+       margin-top:-750px;
     }
 .remove{
     display:grid ;
