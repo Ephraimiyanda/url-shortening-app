@@ -1,4 +1,4 @@
-body{
+.body{
     background-repeat: no-repeat;
     background-size: 340px;
    padding-left: 130px;
@@ -306,7 +306,8 @@ h6{
  .layout{
     margin: 0px;
  }
-@media screen and (max-width:800px){
+ 
+@media  (max-width:800px){
 
 .headingLinks{
     height: max-content;
@@ -376,9 +377,7 @@ margin-top: 0px;
 }
 h1{
     margin: 0px;
-   margin-top: 0px;
-
-
+   margin-top: 410px;
 }
 .working{
 margin: 0px;
@@ -525,7 +524,7 @@ margin-left: 40px;
 @media (max-width:339px){
     .working{
         margin: 0px;
-        margin-top: -750px;
+        margin-top: -700px;
     }
     .hamburger{
         margin: 0px;
