@@ -1,4 +1,4 @@
-I.body{
+ body{
     background-repeat: no-repeat;
     background-size: 340px;
    padding-left: 130px;
@@ -531,11 +531,9 @@ margin-left: 40px;
         margin-top: -1200px;
     }
     .hamburger{
-        margin-top:-200px;
+      
         margin-bottom: 0px;
     }
-    .logo1{
-        margin-bottom: 50px;
-    }
+    
 
 }
