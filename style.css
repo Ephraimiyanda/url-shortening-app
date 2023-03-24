@@ -1,7 +1,12 @@
+html{
+    background-color: white;
+    margin: -10px;
+}
 
 .logo1{
-    
-   margin-right: 40px;
+    padding-left: 17px;
+    padding-top: 15px;
+   margin-right: 0px;
    height: 50px;
 }
 .myBtns{
@@ -317,7 +322,10 @@ h6{
     text-align: center;
     color: white;
 
-  
+}
+.logo1{
+    padding-left: 17px;
+    padding-top: 15px;
 }
 a:hover{
     color:hsl(173, 67%, 73%);
@@ -455,7 +463,7 @@ margin-left: 40px;
 .originalLink{
     border-bottom: 1px solid rgb(212, 210, 210);
     border-spacing: 20px;
-    width:100% ;
+    width: 100px;
    padding-left: 17px;
 }
 .shortenedLink{
@@ -473,6 +481,7 @@ margin-left: 40px;
 
 }
 @media (max-width:1200px) {
+
 
     .linkDiv{
         display: flex;
@@ -502,8 +511,8 @@ margin-left: 40px;
         width:90%;
     }
     .hamburger{
-        position: relative;
-        margin-left: 320px;
+      
+        margin-left: 490px;
         margin-top: -40px;
         width: 35px;
         height: 20px;
