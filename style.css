@@ -1,8 +1,10 @@
 html{
-    background-color: white;
     margin: -10px;
+    overflow-x: hidden;
 }
-
+body{
+    font-family: Poppins;
+}
 .logo1{
     padding-left: 17px;
     padding-top: 15px;
@@ -49,13 +51,14 @@ float: right;
    float:left;
    margin-left: 250px;
    margin-right: -500px;
-   
+   font-family: Poppins;
  
     }
     .upperHeading{
       display: inline-flex;
     }
   a{
+    font-family: Poppins;
     margin-right: 20px;
       text-decoration: none;
       color: gray;
@@ -64,12 +67,14 @@ a:hover{
     color: black;
 }
 h1{
-    
+    font-family: Poppins;
     font-size: xxx-large;
 }
 p{
-    color: gray;
+    color: hsl(257, 7%, 63%);
     font-size: medium;
+    font-family: Poppins;
+    font-size: 18px;
 }
 .starter{
   
@@ -102,6 +107,7 @@ width: 390px;
     
     }
 .inputDiv{
+    font-family: Poppins;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -122,6 +128,7 @@ width: 390px;
 
 }
 input{
+    font-family: Poppins;
 width:60%;
     height: 30px;
     border: 0px;
@@ -130,6 +137,7 @@ width:60%;
     padding-left: 18px;
 }
 .enterBtn{
+    font-family: Poppins;
     height: 30px;
     background-color:hsl(173, 67%, 73%);
     border: 0px;
@@ -139,7 +147,7 @@ width:60%;
     margin-top: 15px;
 }
 .middleSection{
-  
+    font-family: Poppins;
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 100px;
@@ -151,9 +159,11 @@ width:60%;
 justify-content: center;
 text-align: center;
 margin-bottom: 80px;
+font-family: Poppins;
 }
 
 .linkDiv{
+    font-family: Poppins;
     height: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -167,6 +177,7 @@ margin-bottom: 80px;
     height: fit-content;
 }
 .shortenedLink{
+    font-family: Poppins;
     text-align: left;
     width: 10%;
     margin-left: 480px;
@@ -195,6 +206,7 @@ gap: 0px;
 
 h3,h4,h5{
     font-size: larger;
+    font-family: Poppins;
 }
 h3{
     margin-bottom: -10px;
@@ -232,6 +244,7 @@ h5{
     background-image: url(images/icon-fully-customizable.svg);
 }
 .block1,.block2,.block3{
+    font-family: Poppins;
 text-align: left;
 background-color: white;
 height:200px;
@@ -251,12 +264,13 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
     transform: translateY(4rem);
 }
 .boostLinks{
+    font-family: Poppins;
     padding: 20px;
     padding-top: 15px;
     text-align: center;
     justify-content: center;
     background-image: url(./images/bg-boost-desktop.svg);
-    background-color: rgb(48, 53, 70);
+    background-color: hsl(255, 11%, 22%);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -268,13 +282,13 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
 }
 footer{
     padding-top: 20px;
-    background-color: black;
+    background-color: rgb(16, 12, 16);
     padding-bottom: 20px;
     justify-content: center;
     padding-left: 100px;
 }
 .footerDiv{
-  
+    font-family: Poppins;
 display: grid;
 grid-template-columns: repeat(auto-fill,minmax(210px,1fr) ) ;
 align-items: center;

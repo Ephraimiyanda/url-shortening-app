@@ -26,17 +26,20 @@ ShortenBtn.addEventListener("click", (e) =>{
     console.log(input.value);
 });
 
+
 async function shorten(url){
 
         try{
             const res= await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
             const data = await res.json();
             const newLink  = document.createElement("div");
+             const items = JSON.parse(localStorage.getItem('newlink')) || [];
+             localStorage.setItem('newlink', JSON.stringify(newLink));
             newLink.innerHTML= `<div class="linkDiv"><p class="originalLink">${data.result.original_link}</p><p class="shortenedLink">${data.result.short_link}</p><button class="copy">copy</button></div>`;
             middleSection.prepend(newLink)
             const copyBtn = document.querySelector(".copy");
             input.value="";
-            localStorage["jsonData"] = JSON.stringify(data);
+            
 
             copyBtn.addEventListener("click", ()=>{
                 copyBtn.style.backgroundColor="blue";
