@@ -1,10 +1,9 @@
 html{
-    margin-left: -10px;
-margin-right:-10px;;
-    overflow-x: hidden;
+    margin: -7px;
 }
 body{
     font-family: Poppins;
+    margin-right: 0px;
 }
 .logo1{
     padding-left: 17px;
@@ -201,8 +200,8 @@ font-family: Poppins;
 
 display: flex;
 flex-wrap:wrap;
-justify-content:space-around;
-gap: 0px;
+justify-content: center;
+gap: 13px;
 }
 
 h3,h4,h5{
@@ -407,8 +406,7 @@ h1{
     height: 20px;
     display: block;
     padding-top: 7px;
-    background-color: black;
-   
+    background-color: black;   
 }
 .getStarted{
     width: 200px;
