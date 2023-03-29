@@ -1,5 +1,7 @@
 html{
     margin: -7px;
+    overflow-x: hidden;
+    
 }
 body{
     font-family: Poppins;
@@ -222,7 +224,7 @@ h5{
     margin-top: 35px;
 }
 .img1,.img2,.img3{
-   margin-left: 70px;
+    margin-left: 120px;
    margin-bottom: 30px;
     width: 60px;
     height: 60px;
@@ -244,7 +246,7 @@ h5{
     background-image: url(images/icon-fully-customizable.svg);
 }
 .block1,.block2,.block3{
-    font-family: Poppins;
+font-family: Poppins;
 text-align: left;
 background-color: white;
 height:200px;
@@ -252,7 +254,6 @@ width: 330px;
 padding-left: 10px;
 padding-right: 10px;
 font-size: smaller;
-
 border-radius: 5px;
 box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
 
@@ -315,11 +316,79 @@ h6{
      color: white;
  }
  .lineThrough{
-    display: none;
+    background-color: cyan;
+    height: 8px;
+    width: 13px;
+    margin-top: 70px;
+    margin-left: -23px;
+    position: absolute;
+    
+ }
+ .two{
+    margin-top: 40px;
  }
  .layout{
     margin: 0px;
  }
+
+ @media (max-width:1200px) {
+    .lineThrough{
+        position: absolute;
+        background-color: cyan;
+        height: 13px;
+        width: 4px;
+        margin-top: -45px;
+        margin-left: 147px;
+        
+     }
+     .two{
+        height: 12px;
+     }
+    .statistics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+        height: fit-content;
+        padding-bottom: 20px;
+       margin-left: 0px;
+    }
+    
+    .originalLink{
+        border-bottom: 1px solid rgb(212, 210, 210);
+        border-spacing: 20px;
+        width: 100%;
+       padding-left: 17px;
+    }
+    .shortenedLink{
+        padding-left: 17px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: -0px;
+        margin-bottom: 0px;
+    }
+    .copy{
+        width:90%;
+    }
+    .hamburger{
+      
+        margin-left: 490px;
+        margin-top: -40px;
+        width: 35px;
+        height: 20px;
+        display: block;
+        padding-top: 7px;
+        background-color: black;
+        float: right;
+    }
+}
+
  
 @media  (max-width:800px){
 
@@ -425,7 +494,7 @@ input{
     text-align: center;
 }
 .img1,.img2,.img3{
- margin-left: 100px;
+ margin-left: 130px;
 }
 .block2{
     margin-top: 30px;
@@ -437,8 +506,9 @@ input{
 margin-left:  0px;
 width: 120px;
 }
-
-
+.logo1{
+    
+}
 footer{
     display: flex;
     flex-wrap: nowrap;
@@ -456,11 +526,6 @@ footer{
 }
 .socialMedia{
 margin-left: 40px;
-}
-.lineThrough{
-    width: 6px;
-    height: 300px;
-    background-color: cyan;
 }
 .linkDiv{
     display: flex;
@@ -491,60 +556,26 @@ margin-left: 40px;
     width:90%;
     
 }
-
-}
-@media (max-width:1200px) {
-
-
-    .linkDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        background-color: white;
-        height: fit-content;
-        padding-bottom: 20px;
-       margin-left: 0px;
-    }
+.working{
+    margin: 0px;
+    margin-top: -800px;
+   
     
-    .originalLink{
-        border-bottom: 1px solid rgb(212, 210, 210);
-        border-spacing: 20px;
-        width: 100%;
-       padding-left: 17px;
-    }
-    .shortenedLink{
-        padding-left: 17px;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: -0px;
-        margin-bottom: 0px;
-    }
-    .copy{
-        width:90%;
-    }
-    .hamburger{
-      
-        margin-left: 490px;
-        margin-top: -40px;
-        width: 35px;
-        height: 20px;
-        display: block;
-        padding-top: 7px;
-        background-color: black;
-        float: right;
-    }
 }
-@media (max-width:339px){
-    .working{
-        margin: 0px;
-        margin-top: -1200px;
-    }
-    .hamburger{
-        margin: 0px;
-        margin-bottom: 0px;
-    }
-    .logo1{
-        margin-bottom: 0px;
-    }
+.hamburger{
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 24px;
 }
+
+.lineThrough{
+    height: 43px;
+    margin-top: -75px;
+    margin-left: 157px;
+}
+.two{
+    height: 41px;
+}
+
+}
+
