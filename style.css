@@ -177,12 +177,14 @@ font-family: Poppins;
     margin-top: -40px;
     border-radius: 5px;
     height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .shortenedLink{
     font-family: Poppins;
     text-align: left;
     width: 10%;
-    margin-left: 480px;
+    margin-left:auto ;
     color: hsl(173, 67%, 73%);
     padding-right: 60px;
 }
@@ -368,7 +370,7 @@ h6{
     }
     .shortenedLink{
         padding-left: 17px;
-        width: 100%;
+        width: max-content;
         margin-top: 0px;
         margin-left: -0px;
         margin-bottom: 0px;
@@ -506,9 +508,7 @@ input{
 margin-left:  0px;
 width: 120px;
 }
-.logo1{
-    
-}
+
 footer{
     display: flex;
     flex-wrap: nowrap;
@@ -541,12 +541,12 @@ margin-left: 40px;
 .originalLink{
     border-bottom: 1px solid rgb(212, 210, 210);
     border-spacing: 20px;
-    width: 100px;
+    width: 80%;
    padding-left: 17px;
 }
 .shortenedLink{
     padding-left: 17px;
-    width: 100%;
+    width: min-content;
     margin-top: 0px;
     margin-left: -0px;
     margin-bottom: 0px;
@@ -578,4 +578,15 @@ margin-left: 40px;
 }
 
 }
-
+@media (max-width:400px) {
+    .block1,.block2,.block3{
+        width: 250px;
+        margin-left: -10px;
+    }
+    .img1,.img2,.img3{
+        margin-left: 100px;
+    }
+    .lineThrough{
+        margin-left: 130px;
+    }
+}
