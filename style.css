@@ -12,6 +12,7 @@ body{
     padding-top: 15px;
    margin-right: 0px;
    height: 50px;
+   width: 150px;
 }
 .myBtns{
     display: inline-flex;
@@ -52,6 +53,7 @@ float: right;
   .headingLinks{
    display: inline-flex;
    float:left;
+   margin-top: 30px;
    margin-left: 250px;
    margin-right: -500px;
  
@@ -163,12 +165,13 @@ margin-bottom: 80px;
     justify-content: center;
     width: 77%;
     background-color: white;
-   margin-left: 160px;
+   margin-left: 147px;
     margin-bottom: 60px;
     margin-top: -40px;
     border-radius: 5px;
     height: fit-content;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-left: 15px;
     padding-right: 10px;
 }
 .shortenedLink{
@@ -179,6 +182,7 @@ margin-bottom: 80px;
     padding-right: 60px;
 }
 .copy{
+    margin-top: 12px;
     color: white;
     background-color:hsl(173, 67%, 73%);
     border-width: 0px;
