@@ -323,14 +323,14 @@ h6{
     .lineThrough{
         position: absolute;
         background-color: cyan;
-        height: 13px;
+        height: 13.5px;
         width: 4px;
         margin-top: -45px;
-        margin-left: 147px;
+        margin-left: 148px;
         
      }
      .two{
-        height: 12px;
+        height: 12.5px;
      }
     .statistics{
         display: flex;
@@ -466,6 +466,7 @@ h1{
 }
 .rotate{
     transform: scale(1.1);
+
 }
 .getStarted{
     width: 200px;
@@ -557,12 +558,12 @@ margin-left: 40px;
 }
 
 .lineThrough{
-    height: 43px;
+    height: 43.5px;
     margin-top: -75px;
     margin-left: 157px;
 }
 .two{
-    height: 41px;
+    height: 42px;
 }
 
 }
@@ -575,6 +576,11 @@ margin-left: 40px;
         margin-left: 100px;
     }
     .lineThrough{
-        margin-left: 130px;
+        margin-left: 127.8px;
+        height: 49;
+    }
+    .two{
+
+        height: 59;
     }
 }
