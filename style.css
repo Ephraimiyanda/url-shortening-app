@@ -462,6 +462,10 @@ h1{
     height: 20px;
     display: block;
     padding-top: 7px; 
+    transition: all 0.5s;
+}
+.rotate{
+    transform: scale(1.1);
 }
 .getStarted{
     width: 200px;
