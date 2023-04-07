@@ -12,7 +12,8 @@ function showLinks(){
     dropdownLinks.classList.toggle("block");
     myBtns.classList.toggle("remove");
     working.classList.toggle("blank");
- h1.classList.toggle("h1marging")
+ h1.classList.toggle("h1marging");
+ OptionBtn.classList.toggle("rotate");
 }
 OptionBtn.addEventListener("click",showLinks)
 
@@ -33,8 +34,8 @@ async function shorten(url){
             const res= await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
             const data = await res.json();
             const newLink  = document.createElement("div");
+            localStorage.setItem('newlink', JSON.stringify(newLink));
              const items = JSON.parse(localStorage.getItem('newlink')) || [];
-             localStorage.setItem('newlink', JSON.stringify(newLink));
             newLink.innerHTML= `<div class="linkDiv"><p class="originalLink">${data.result.original_link}</p><p class="shortenedLink">${data.result.short_link}</p><button class="copy">copy</button></div>`;
             middleSection.prepend(newLink)
             const copyBtn = document.querySelector(".copy");
@@ -42,7 +43,7 @@ async function shorten(url){
             
 
             copyBtn.addEventListener("click", ()=>{
-                copyBtn.style.backgroundColor="blue";
+                copyBtn.style.backgroundColor="rgb(48, 53, 70)";
                 copyBtn.innerHTML=`copied!`
                 navigator.clipboard.writeText(data.result.short_link);
             });
