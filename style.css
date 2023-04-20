@@ -1,11 +1,11 @@
 
-html{
-    margin: -7px;
-    overflow-x: hidden;
-    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-body{
-    margin-right: 0px;
+.container{
+    width: 100%;
 }
 .logo1{
     padding-left: 17px;
@@ -53,7 +53,7 @@ float: right;
   .headingLinks{
    display: inline-flex;
    float:left;
-   margin-top: 30px;
+   margin-top: 23px;
    margin-left: 250px;
    margin-right: -500px;
  
@@ -87,18 +87,21 @@ margin-bottom: 80px;
 width: 390px;
 
   }
+
  .workingDiv{ 
     flex-wrap: wrap-reverse;
-    display: flex;
     justify-content: center;
+    display: flex;
+    width: 100%;
  }
  .working{
    
     margin-bottom: 50px;
  }
   .getStarted{
-    width:100px;
-    height:30px;
+    margin-top: 20px;
+    width:150px;
+    height:40px;
     border-radius: 100px;
     border: 0px;
     background-color:hsl(173, 67%, 73%);
@@ -145,7 +148,8 @@ width:60%;
     margin-top: 15px;
 }
 .middleSection{
-    padding-right: 50px;
+    width: 100%;
+    padding-right: 40px;
     padding-left: 50px;
     padding-top: 100px;
     padding-bottom: 90px;
@@ -197,6 +201,7 @@ margin-bottom: 80px;
 .statistics{
 
 display: flex;
+flex-direction: unset;
 flex-wrap:wrap;
 justify-content: center;
 gap: 13px;
@@ -244,7 +249,7 @@ h5{
 text-align: left;
 background-color: white;
 height:200px;
-width: 330px;
+width: 30%;
 padding-left: 10px;
 padding-right: 10px;
 font-size: smaller;
@@ -269,7 +274,7 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
     background-size: cover;
 }
 .logo{
-    height: 50px;
+    height: 40px;
     width: 120px;
   padding-left: 20px;
   margin-right: 0px;
@@ -282,10 +287,9 @@ footer{
     padding-left: 100px;
 }
 .footerDiv{
-display: grid;
-grid-template-columns: repeat(auto-fill,minmax(210px,1fr) ) ;
-align-items: center;
-justify-content: center;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
 }
 
 img{
@@ -324,23 +328,20 @@ h6{
  }
 
  @media (max-width:1200px) {
-    .lineThrough{
-        position: absolute;
-        background-color: cyan;
-        height: 13.5px;
-        width: 4px;
-        margin-top: -45px;
-        margin-left: 148px;
+  
+        .lineThrough{
+            background-color: cyan;
+            height: 8px;
+            width: 13px;
+            margin-top: 70px;
+            margin-left: -23px;
+            position: absolute;
+            
+         }
         
-     }
-     .two{
-        height: 12.5px;
-     }
-    .statistics{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+     
+    
+    
     .linkDiv{
         display: flex;
         flex-wrap: wrap;
@@ -378,10 +379,10 @@ h6{
         padding-right: 10px;
         float: right;
     }
-}
 
+ }
  
-@media  (max-width:800px){
+@media(max-width:800px){
 
 .headingLinks{
     height: max-content;
@@ -431,14 +432,12 @@ margin-left: 110px;
 }
 .workingDiv{
     display: flex;
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
     gap: 100px;
+    margin-bottom: 500px;
 }
-.working{
-    margin: 0px;
-        width: 350px;
-       margin-top: -830px;
-    }
 .remove{
     display:grid ;
     
@@ -455,6 +454,7 @@ margin-top: 0px;
 .starter{
     text-align: center;
     margin-left: -19px;
+    width: 90%;
 }
 h1{
     margin: 0px;
@@ -476,14 +476,14 @@ h1{
     width: 200px;
 }
 .shortner{
-    width: 300px;
+    width: 80%;
  
 }
 input{
-    width:280px
+    width:100%;
 }
 .enterBtn{
-    width: 300px;
+    width: 100%;
 }
 .block1,.block2,.block3{
     text-align: center;
@@ -504,21 +504,30 @@ width: 160px;
 
 footer{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+   flex-direction: column;
+   align-content: center;
+   padding: 0px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 .footerDiv{
    display: flex;
    flex-direction: column;
-    margin-left: -100px;
+    align-content: center;
     text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+.footer-logo{
+  margin-left: -25px;
 }
 .footHeader{
     margin-bottom: 20px;
     margin-left: -18px;
 }
 .socialMedia{
-margin-left: 40px;
+    margin-top: 20px;
+margin-left: 0px;
 }
 .linkDiv{
     display: flex;
@@ -543,6 +552,7 @@ margin-left: 40px;
     margin-top: 0px;
     margin-left: -0px;
     margin-bottom: 0px;
+
 }
 .copy{
     
@@ -551,7 +561,8 @@ margin-left: 40px;
 }
 .working{
     margin: 0px;
-    margin-top: -800px;
+    margin-top: -750px;
+   width: 80%;
    
     
 }
@@ -564,27 +575,51 @@ margin-left: 40px;
 .lineThrough{
     height: 43.5px;
     margin-top: -75px;
-    margin-left: 157px;
+    margin-left: 155px;
+    width: 6px;
 }
 .two{
-    height: 42px;
+    height: 43px;
+}
+.statistics{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 }
 
+  .block1,.block2,.block3{
+    text-align: left;
+    background-color: white;
+    height:200px;
+    width: 330px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: smaller;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
+    
+    }
 }
 @media (max-width:400px) {
     .block1,.block2,.block3{
         width: 250px;
         margin-left: -10px;
+        text-align: center;
     }
     .img1,.img2,.img3{
-        margin-left: 100px;
+        margin-left: 85px;
     }
     .lineThrough{
-        margin-left: 127.8px;
+        margin-left: 110.8px;
         height: 49;
     }
-    .two{
-
-        height: 59;
-    }
+   .working{
+    margin-top: -800px;
+    width: 90%;
+    height: 250px;
+   }
+   .starter{
+   width: 100%;
+   }
 }
