@@ -7,13 +7,14 @@ const working =  document.querySelector(".working");
 const h1 =document.querySelector("h1");
 const middleSection =document.querySelector(".middleSection");
 const form  = document.querySelector("form")
-
+const workingDiv = document.querySelector(".workingDiv")
 function showLinks(){
     dropdownLinks.classList.toggle("block");
     myBtns.classList.toggle("remove");
     working.classList.toggle("blank");
  h1.classList.toggle("h1marging");
  OptionBtn.classList.toggle("rotate");
+ workingDiv.classList.toggle("reduce_bottom")
 }
 OptionBtn.addEventListener("click",showLinks)
 

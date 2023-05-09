@@ -84,19 +84,32 @@ margin-top: 30px;
 justify-content: center;
 text-align: left;
 margin-bottom: 80px;
-width: 390px;
+width: 50%;
 
   }
-
+.starter h1{
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.starter p{
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
  .workingDiv{ 
     flex-wrap: wrap-reverse;
     justify-content: center;
     display: flex;
-    width: 100%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
  }
  .working{
-   
-    margin-bottom: 50px;
+   width: 40%;
+   height: 50%;
+   margin-top: auto;
+   margin-bottom: 70px;
  }
   .getStarted{
     margin-top: 20px;
@@ -109,6 +122,11 @@ width: 390px;
     padding-top: 2px;
     margin-bottom: 20px;
     
+    }
+    .btn_started{
+        width: 390px;
+        margin-left: auto;
+    margin-right: auto;
     }
 .inputDiv{
     display: flex;
@@ -280,16 +298,18 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
   margin-right: 0px;
 }
 footer{
-    padding-top: 20px;
     background-color: rgb(16, 12, 16);
-    padding-bottom: 20px;
     justify-content: center;
-    padding-left: 100px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: auto;
 }
 .footerDiv{
 display: flex;
 flex-wrap: nowrap;
 justify-content: space-around;
+margin: auto;
+
 }
 
 img{
@@ -383,7 +403,19 @@ h6{
  }
  
 @media(max-width:800px){
-
+    .btn_started{
+        width: 100%;
+    }
+    .starter h1{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .starter p{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 .headingLinks{
     height: max-content;
     line-height: 60px;
@@ -417,26 +449,28 @@ a:hover{
 margin-top: -28px;
 
 }
+
 .signupBtn{
     width: 200px;
-margin-left: 110px;
+margin-left: 90px;
 }
 .loginBtn{
     
     background-color: rgb(48, 53, 70) ;
     color: white;
-    margin-left: 170px;
+    margin-left: 150px;
 }
 .loginBtn:hover{
     color:hsl(173, 67%, 73%) ;
 }
 .workingDiv{
     display: flex;
-    flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
     gap: 100px;
-    margin-bottom: 500px;
+    margin-bottom: 00px;
+}
+.reduce_bottom{
+    margin-bottom: 100px;
 }
 .remove{
     display:grid ;
@@ -461,13 +495,7 @@ h1{
    margin-top: 390px;
 }
 
-.hamburger{
-    width: 35px;
-    height: 20px;
-    display: block;
-    padding-top: 7px; 
-    transition: all 0.5s;
-}
+
 .rotate{
     transform: scale(1.1);
 
@@ -509,6 +537,9 @@ footer{
    padding: 0px;
    padding-top: 20px;
    padding-bottom: 20px;
+   height: fit-content;
+   padding-bottom: 30px;
+   padding-top: 20px;
 }
 .footerDiv{
    display: flex;
@@ -522,8 +553,12 @@ footer{
   margin-left: -25px;
 }
 .footHeader{
-    margin-bottom: 20px;
-    margin-left: -18px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+}
+footer a{
+    margin-right: 0px;
 }
 .socialMedia{
     margin-top: 20px;
@@ -537,7 +572,8 @@ margin-left: 0px;
     background-color: white;
     height: fit-content;
     padding-bottom: 20px;
-   margin-left: 0px;
+   margin-left:auto;
+   margin-right: auto;
 }
 
 .originalLink{
@@ -602,6 +638,13 @@ margin-left: 0px;
     }
 }
 @media (max-width:400px) {
+    .hamburger{
+    width: 35px;
+    height: 20px;
+    display: block;
+    padding-top: 7px; 
+    transition: all 0.5s;
+}
     .block1,.block2,.block3{
         width: 250px;
         margin-left: -10px;
@@ -615,11 +658,19 @@ margin-left: 0px;
         height: 49;
     }
    .working{
-    margin-top: -800px;
-    width: 90%;
-    height: 250px;
+    margin-top: -600px;
+    width: 100%;
+    height: 10%;
+    margin-bottom: auto;
    }
    .starter{
    width: 100%;
+   margin-bottom: -10%;
    }
+   .starter h1{margin-top: 230px;}
+}
+@media (max-width:290px) {
+    .starter{
+        margin-bottom: -25%;
+    }
 }
