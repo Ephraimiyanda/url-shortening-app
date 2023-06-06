@@ -7,16 +7,22 @@
 .container{
     width: 100%;
 }
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 92%;
+    margin-left: auto;
+}
 .logo1{
-    padding-left: 17px;
     padding-top: 15px;
-   margin-right: 0px;
    height: 50px;
    width: 150px;
 }
 .myBtns{
     display: inline-flex;
 float: right;
+margin-top: -15px;
 
 }
 .signupBtn{
@@ -51,12 +57,15 @@ float: right;
 }
 
   .headingLinks{
+   margin-left: auto;
    display: inline-flex;
-   float:left;
-   margin-top: 23px;
-   margin-left: 250px;
-   margin-right: -500px;
- 
+   margin-right: 0;
+   margin-top: 20px;
+   margin-bottom: auto;
+    }
+    .headingLinks ul{
+        display: flex;
+        margin-left: auto;
     }
     .upperHeading{
       display: inline-flex;
@@ -89,12 +98,10 @@ width: 50%;
   }
 .starter h1{
     width: 390px;
-    margin-left: auto;
     margin-right: auto;
 }
 .starter p{
     width: 390px;
-    margin-left: auto;
     margin-right: auto;
 }
  .workingDiv{ 
@@ -123,7 +130,6 @@ width: 50%;
     }
     .btn_started{
         width: 390px;
-        margin-left: auto;
     margin-right: auto;
     }
 .inputDiv{
@@ -291,7 +297,7 @@ box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.12), 0 1px 4px 0 rgba( 0, 0, 0, 0.18);
 }
 .logo{
     height: 40px;
-    width: 120px;
+    width: 130px;
   padding-left: 20px;
   margin-right: 0px;
 }
@@ -344,9 +350,21 @@ h6{
  .layout{
     margin: 0px;
  }
-
+@media(min-width:1135px) {
+    .headingLinks{
+        margin-top: 20px; 
+    }   
+    .nav{
+        width: 93%;
+    }
+}
+@media(max-width:1135px){
+    .headingLinks{
+        margin-top: -20px; 
+    }  
+}
  @media (max-width:1200px) {
-  
+ 
         .lineThrough{
             background-color: cyan;
             height: 8px;
@@ -401,6 +419,12 @@ h6{
  }
  
 @media(max-width:800px){
+    .nav{
+        width: 100%;
+        justify-content: space-between;
+        margin-right: auto;
+        padding-right: 20px;
+    }
     .btn_started{
         width: 100%;
     }
@@ -411,7 +435,6 @@ h6{
     }
     .starter p{
         width: 100%;
-        margin-left: auto;
         margin-right: auto;
     }
 .headingLinks{
@@ -420,7 +443,6 @@ h6{
     line-height: 60px;
     padding-top: 20px;
     padding-bottom: 30px;
-    display:block;
     margin-left:auto;
     margin-right: auto;
     background-color:rgb(48, 53, 70) ;
@@ -430,6 +452,11 @@ h6{
     border-radius: 10px;
     transition: all 0.5s;
     margin-top: -500px;
+}
+.headingLinks ul{
+    flex-direction: column;
+    margin-right: auto;
+    width: 90%;
 }
 .block{
     transform: translateY(500px);
@@ -448,12 +475,11 @@ a:hover{
 .myBtns{
     border-top: 1px solid white;
     color: white;
-    padding-bottom: 40px;
     display: grid;
     margin-left:auto;
     margin-right: auto;
     margin-top: 18px;
-    width: 70%;
+    width: 100%;
     float: none;
 }
 
